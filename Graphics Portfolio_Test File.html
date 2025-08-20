@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Graphic Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> <!-- Replace with your own FontAwesome kit -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #222, #444);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 10px 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #444;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #1e90ff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+      font-size: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    .about {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #1e90ff;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .resume-btn:hover {
+      background: #0d6efd;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .contact-form button {
+      background: #1e90ff;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #0d6efd;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #1e90ff;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #fff;
+    }
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="home">
+    <h1>Hello, I'm a Graphic Designer</h1>
+    <p>Creating logos, branding, and visual stories that inspire</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Work</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300?text=Logo+Design" alt="Logo Design">
+      <img src="https://via.placeholder.com/400x300?text=Poster+Design" alt="Poster Design">
+      <img src="https://via.placeholder.com/400x300?text=Social+Media+Graphics" alt="Social Media Graphics">
+      <img src="https://via.placeholder.com/400x300?text=Brand+Identity" alt="Brand Identity">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about">
+      I’m a multifaceted designer passionate about crafting visual experiences. 
+      My expertise spans branding, print design, and digital campaigns. 
+      I believe great design tells stories and builds lasting impressions.  
+      Let’s work together to bring your ideas to life.
+    </p>
+    <div style="text-align:center;">
+      <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="socials" style="margin-top:20px;">
+      <a href="mailto:yourname@email.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
+      <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 My Portfolio | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
